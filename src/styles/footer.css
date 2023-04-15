@@ -19,7 +19,7 @@
     list-style: none;
 }
 
-.footer-details > ul > a > li {
+.footer-details > ul  > li {
     list-style: none;
     margin-top: 10px;
     margin-bottom: 10px;

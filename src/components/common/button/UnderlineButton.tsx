@@ -17,7 +17,7 @@ const UnderlineButton = (props: UnderlineButtonProps) => {
         {!props.actionFunction && props.url
             ?
             <button
-                onClick={() => navigate(`props.url`)}
+                onClick={() => navigate(`${props.url}`)}
                 style={props.style}
                 className='underline-subline'>
                 {props.icon} {props.label}

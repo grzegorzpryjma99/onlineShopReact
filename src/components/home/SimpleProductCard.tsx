@@ -15,7 +15,12 @@ const SimpleProductCard = (props: SimpleProductCardProps) => {
         <div onClick={() => navigate(`/produkt/${props.id}`)}>
             <img src={getImageById(props.id)}
                  alt='zdjecie produktu'
-                 style={{background: '#F7F8FA', position: 'inherit', width: '100%'}}
+                 style={{
+                     background: '#F7F8FA',
+                     width: '100%',
+                     objectFit: 'cover',
+                     height: '100%'
+                 }}
             />
             <div className='product-card-details'>
                 <p className='subject' id='product-name'>{props.name}</p>
