@@ -15,7 +15,7 @@ npm run build
 
 ### More
 
-Version with Next.js with Server-side rendering available here:
+Next.js version with Server-side rendering available here:
 https://github.com/grzegorzpryjma99/onlineShop
 
 
