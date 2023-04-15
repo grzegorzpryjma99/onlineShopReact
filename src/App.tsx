@@ -1,26 +1,50 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect, useState} from 'react';
+import './styles/globals.css';
+import './styles/footer.css';
+import './styles/home.css';
+import './styles/navbar.css';
+import './styles/product.css';
+import './styles/cart.css';
+import './styles/order.css';
+import './styles/info.css';
+import './styles/login.css';
+import './styles/font.css';
+
+import {config} from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import 'primereact/resources/themes/lara-light-indigo/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
+import {BrowserRouter} from "react-router-dom";
+import CartProvider, {initialCartState} from "./service/CartProvider";
+import Cookies from "js-cookie";
+import {Cart} from "./components/cart/types";
+import {AppRoutes} from "./AppRoutes";
+import {Loader} from "./components/common/Loader";
+
+config.autoAddCss = false;
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [cartState, setCartState] = useState<Cart | null>(null);
+
+    useEffect(() => {
+        const cookie = Cookies.get('cart');
+        if (cookie) {
+            const initialState = JSON.parse(cookie);
+            setCartState(initialState);
+        } else {
+            setCartState(initialCartState);
+        }
+    }, []);
+
+    return <>
+        {cartState ? <CartProvider initialState={cartState}>
+            <BrowserRouter>
+                <AppRoutes/>
+            </BrowserRouter>
+        </CartProvider> : <Loader/>}
+    </>
 }
 
 export default App;

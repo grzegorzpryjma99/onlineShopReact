@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: unset;
+}
+
+main {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    margin: 10px;
+    background: transparent;
+    border: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    filter: drop-shadow(0px 4px 24px rgba(123, 123, 123, 0.15));
+    transform: scale(1.03);
+}
+
+.listContainer {
+    text-align: center;
+    padding: 7em 10em;
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #5E6E89;
+}
+
+.action-button {
+    background: #56B280;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    color: #FFFFFF;
+    height: 40px;
+}
+
+.action-border-button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #56B280;
+    border-radius: 4px;
+    color: #56B280;
+}
+
+.h2-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.9px;
+    color: #1D252C;
+}
+
+.title-h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: -0.9px;
+    color: #0B254B;
+}
+
+.subline {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #56B280;
+}
+
+.underline-subline {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #56B280;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.radio-button-field {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dialog {
+    width: 50%;
+}
+
+.p-inputnumber-button {
+    background: transparent !important;
+    color: #56B280 !important;
+    border-color: #56B280 !important;
+}
+
+.p-inputtext:enabled:hover, .p-inputtext:enabled:focus {
+    border-color: #56B280 !important;
+    box-shadow: none !important;
+}
+
+.p-dropdown:not(.p-disabled):hover {
+    border-color: #56B280 !important;
+}
+
+.p-dropdown:not(.p-disabled).p-focus {
+    border-color: #56B280 !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0) !important;
+}
+
+.count-input {
+    height: 40px;
+}
+
+.p-rating-icon {
+    color: #5BC08A !important;
+}
+
+.p-toast .p-toast-message.p-toast-message-success {
+    background: #e4f8f0;
+    border: solid #5BC08A !important;
+    border-top-width: medium !important;
+    border-right-width: medium !important;
+    border-bottom-width: medium !important;
+    border-left-width: medium !important;
+    border-width: 0 0 0 6px !important;
+}
+
+.p-toast .p-toast-message.p-toast-message-warn {
+    background: #e4f8f0 !important;
+    color: #56B280 !important;
+    border: solid #5BC08A !important;
+    border-top-width: medium !important;
+    border-right-width: medium !important;
+    border-bottom-width: medium !important;
+    border-left-width: medium !important;
+    border-width: 0 0 0 6px !important;
+}
+
+.p-toast .p-toast-message.p-toast-message-warn .p-toast-message-icon, .p-toast .p-toast-message.p-toast-message-warn .p-toast-icon-close {
+    color: #56B280 !important;
+}
+
+.p-badge {
+    background: #56B280 !important;
+    color: #ffffff !important;
+}
+
+.p-steps .p-steps-item.p-highlight .p-steps-number {
+    background: #EEF2FF !important;
+    color: #56B280 !important;
+}
+
+.p-radiobutton .p-radiobutton-box.p-highlight {
+    border-color: #56B280 !important;
+    background: #56B280 !important;
+}
+
+.p-steps .p-steps-item .p-menuitem-link:not(.p-disabled):focus {
+    box-shadow: none !important;
+}

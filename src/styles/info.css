@@ -1,0 +1,14 @@
+.learn-more-element-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 10em;
+}
+
+.learn-more-element-wrapper > div {
+    padding: 1em;
+}
+
+.learn-more-paragraph {
+    margin-top: 25px
+}

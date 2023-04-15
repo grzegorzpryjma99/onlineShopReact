@@ -1,0 +1,78 @@
+.cart-sum-up-container {
+    display: flex;
+    align-self: end;
+    align-items: center;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.cart-container {
+    display: flex;
+    padding: 4em 2em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 65vh;
+}
+
+.cart-sum-up-button {
+    width: 40%
+}
+
+.cart-list {
+    padding: 1em;
+    width: 100%;
+}
+
+.cart-headers {
+    border-bottom: 1px solid #E5E5E5;
+    width: 100%;
+    display: flex;
+    padding: 1em 0em;
+}
+
+.list-one {
+    width: 55%;
+    display: flex;
+    align-items: center;
+}
+
+.list-two {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-three {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-four {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.empty-info {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #5E6E89;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

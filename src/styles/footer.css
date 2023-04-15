@@ -1,0 +1,55 @@
+.footer {
+    background: #272727;
+    color: white;
+    display: flex;
+    padding: 3em 9em;
+    min-height: 25vh;
+}
+
+.footer-second-section {
+    display: flex;
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-top: 1.5px solid #FFFFFF;
+}
+
+.footer-details > ul {
+    list-style: none;
+}
+
+.footer-details > ul > a > li {
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.footer-details > ul > a:visited {
+    color: white;
+}
+
+.footer-details {
+    text-align: start;
+    padding: 1em;
+}
+
+.footer-first-section {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: start;
+    border-top: 1.5px solid #FFFFFF;
+    padding-top: 1em;
+}
+
+.footer-first-section > p{
+    font-weight: 400;
+}
+
+
+.footer-logo {
+    height: 75px;
+    width: 140px;
+}

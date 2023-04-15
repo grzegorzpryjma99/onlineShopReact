@@ -1,0 +1,33 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    color: black;
+    justify-content: space-around;
+    height: 10vh;
+    z-index: 999;
+    border-bottom: 0.5px solid rgba(86, 178, 128, 0.2);
+}
+
+.navbarItemContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: 100px;
+}
+
+.navItem {
+    padding: 1em;
+}
+
+
+.navbar-button {
+    transition: all 0.3s ease;
+}
+.navbar-button:hover {
+    transform: scale(1.15);
+
+}

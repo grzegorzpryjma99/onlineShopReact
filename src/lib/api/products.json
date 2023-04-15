@@ -1,0 +1,103 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Produkt9",
+      "description": "All hand-made with natural soy wax, Candleaf is made for your pleasure moments.",
+      "price": 87,
+      "category": "Home"
+    },
+    {
+      "id": 2,
+      "name": "Produkt1",
+      "description": "All hand-made with natural soy wax, Candleaf is made for your pleasure moments.",
+      "price": 99,
+      "category": "Home"
+    },
+    {
+      "id": 3,
+      "name": "Produkt1",
+      "description": "All hand-made with natural soy wax, Candleaf is made for your pleasure moments.",
+      "price": 12,
+      "category": "Home"
+    },
+    {
+      "id": 4,
+      "name": "Produkt1",
+      "description": "All hand-made with natural soy wax, Candleaf is made for your pleasure moments.",
+      "price": 44,
+      "category": "Garden"
+    },
+    {
+      "id": 5,
+      "name": "Produkt1",
+      "description": "All hand-made with natural soy wax, Candleaf is made for your pleasure moments.",
+      "price": 765,
+      "category": "Garden"
+    },
+    {
+      "id": 6,
+      "name": "Produkt1",
+      "description": "All hand-made with natural soy wax, Candleaf is made for your pleasure moments.",
+      "price": 342,
+      "category": "Garden"
+    },
+    {
+      "id": 7,
+      "name": "Produkt1",
+      "description": "All hand-made with natural soy wax, Candleaf is made for your pleasure moments.",
+      "price": 34,
+      "category": "Home"
+    },
+    {
+      "id": 8,
+      "name": "Produkt1",
+      "description": "All hand-made with natural soy wax, Candleaf is made for your pleasure moments.",
+      "price": 94,
+      "category": "Garden"
+    },
+    {
+      "id": 9,
+      "name": "Produkt1",
+      "description": "All hand-made with natural soy wax, Candleaf is made for your pleasure moments.",
+      "price": 43,
+      "category": "Home"
+    },
+    {
+      "id": 10,
+      "name": "Produkt1",
+      "description": "All hand-made with natural soy wax, Candleaf is made for your pleasure moments.",
+      "price": 23,
+      "category": "Garden"
+    },
+    {
+      "id": 11,
+      "name": "Produkt1",
+      "description": "All hand-made with natural soy wax, Candleaf is made for your pleasure moments.",
+      "price": 99,
+      "category": "Garden"
+    },
+    {
+      "id": 12,
+      "name": "Produkt1",
+      "description": "All hand-made with natural soy wax, Candleaf is made for your pleasure moments.",
+      "price": 100,
+      "category": "Garden"
+    },
+    {
+      "id": 13,
+      "name": "Produkt1",
+      "description": "All hand-made with natural soy wax, Candleaf is made for your pleasure moments.",
+      "price": 100,
+      "category": "Garden"
+    },
+    {
+      "id": 13,
+      "name": "Produkt1",
+      "description": "All hand-made with natural soy wax, Candleaf is made for your pleasure moments.",
+      "price": 100,
+      "category": "Garden"
+    }
+  ]
+}
+
