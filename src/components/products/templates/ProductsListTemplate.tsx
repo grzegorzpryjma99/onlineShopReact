@@ -8,6 +8,7 @@ import {faMagnifyingGlass, faX} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import ActionBorderButton from "../../common/button/ActionBorderButton";
 import {getPaginatedProductsWithFilter} from "../../../lib/api/Api";
+import {Loader} from "../../common/Loader";
 
 interface ProductCategoryDropDown {
     name: React.DetailedHTMLProps<React.HTMLAttributes<HTMLParagraphElement>, HTMLParagraphElement>,
@@ -126,7 +127,7 @@ const ProductsListTemplate = () => {
                                     label='Clear filters'/>
             </div>
         </div>
-        <ProductList products={products}/>
+        {products.length ? <ProductList products={products}/> : <Loader style={{height: '50vh'}}/>}
         <Paginator first={actualPage * productsOnPage} rows={productsOnPage} totalRecords={totalElement}
                    onPageChange={event => setActualPage(event.page)}
                    template={{layout: 'PrevPageLink CurrentPageReport NextPageLink'}}/>

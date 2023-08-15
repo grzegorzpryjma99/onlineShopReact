@@ -7,6 +7,7 @@ import React, {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import {Product} from "../../products/types/types";
 import {get} from "../../../lib/api/Api";
+import {Loader} from "../../common/Loader";
 
 const HomeTemplate = () => {
     const navigate = useNavigate();
@@ -21,16 +22,20 @@ const HomeTemplate = () => {
         <HomeBanner/>
         <HomeCard/>
         <div>
-            <PopularProductList title='Products' description='Order it for you or for your beloved ones'
-                                products={products}/>
+            {products.length ?
+                <PopularProductList title='Products' description='Order it for you or for your beloved ones'
+                                    products={products}/>
+                : <Loader style={{height: '55vh'}}/>}
             <p onClick={() => navigate(`/lista-produktow`)} className='description'>Show more...</p>
             <br/>
         </div>
         <News/>
         <Opinions/>
         <div>
-            <PopularProductList title='Popular' description='Our top selling product that you may like'
-                                products={products}/>
+            {products.length ?
+                <PopularProductList title='Popular' description='Our top selling product that you may like'
+                                    products={products}/>
+                : <Loader style={{height: '55vh'}}/>}
         </div>
     </>
 }

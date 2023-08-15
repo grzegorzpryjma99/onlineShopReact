@@ -1,8 +1,12 @@
-import React from "react";
+import React, {CSSProperties} from "react";
 import {ProgressSpinner} from "primereact/progressspinner";
 
-export const Loader = () => {
-    return <div className='global-center'>
+interface LoaderProps {
+    style?: CSSProperties
+}
+
+export const Loader = (props: LoaderProps) => {
+    return <div style={props.style} className='global-center'>
         <ProgressSpinner/>
     </div>
 }
