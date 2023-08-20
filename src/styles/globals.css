@@ -215,3 +215,13 @@ button:hover {
 .p-steps .p-steps-item .p-menuitem-link:not(.p-disabled):focus {
     box-shadow: none !important;
 }
+
+.mobile-modal {
+    display: none !important;
+}
+
+@media (max-width: 1180px) {
+    .mobile-modal {
+        display: block !important;
+    }
+}

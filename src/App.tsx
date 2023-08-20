@@ -21,6 +21,7 @@ import Cookies from "js-cookie";
 import {Cart} from "./components/cart/types";
 import {AppRoutes} from "./AppRoutes";
 import {Loader} from "./components/common/Loader";
+import {BlockModal} from "./components/common/BlockModal";
 
 config.autoAddCss = false;
 
@@ -39,6 +40,7 @@ function App() {
     }, []);
 
     return <>
+        <BlockModal/>
         {cartState ? <CartProvider initialState={cartState}>
             <BrowserRouter>
                 <AppRoutes/>
