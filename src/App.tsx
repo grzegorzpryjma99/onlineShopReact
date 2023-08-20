@@ -22,6 +22,7 @@ import {Cart} from "./components/cart/types";
 import {AppRoutes} from "./AppRoutes";
 import {Loader} from "./components/common/Loader";
 import {BlockModal} from "./components/common/BlockModal";
+import { Analytics } from '@vercel/analytics/react';
 
 config.autoAddCss = false;
 
@@ -40,6 +41,7 @@ function App() {
     }, []);
 
     return <>
+        <Analytics/>
         <BlockModal/>
         {cartState ? <CartProvider initialState={cartState}>
             <BrowserRouter>
