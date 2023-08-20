@@ -54,7 +54,7 @@ const ProductsListTemplate = () => {
         webVitalActions.sendDataToAnalytics("products");
         webVitalActions.googleAnalyticsGetWebVitals("products");
         webVitalActions.sendDataToGAForWebVitalsReport("products");
-        googleAnalyticsActions.initGoogleAnalytics("UA-191680881-1");
+        googleAnalyticsActions.initGoogleAnalytics("prj_lFc4Fj669YRTjIwwE5UqwmY1m6W7");
     }, []);
 
     const getProducts = () => {

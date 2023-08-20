@@ -6,7 +6,7 @@ const newsPlaceholder = process.env.PUBLIC_URL + "/newsPhoto.png";
 const LearnMoreTemplate = () => {
 
     useEffect(() => {
-        googleAnalyticsActions.initGoogleAnalytics("UA-191680881-1");
+        googleAnalyticsActions.initGoogleAnalytics("prj_lFc4Fj669YRTjIwwE5UqwmY1m6W7");
         webVitalActions.googleAnalyticsGetWebVitals("about");
         webVitalActions.sendDataToAnalytics("about");
         webVitalActions.sendDataToGAForWebVitalsReport("about");
