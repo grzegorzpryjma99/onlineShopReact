@@ -9,6 +9,8 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import ActionBorderButton from "../../common/button/ActionBorderButton";
 import {getPaginatedProductsWithFilter} from "../../../lib/api/Api";
 import {Loader} from "../../common/Loader";
+import {googleAnalyticsActions} from "../../../utils/google-analytics/google-analytics-init";
+import {webVitalActions} from "../../../utils/google-analytics/google-analytics-get-web-vitals";
 
 interface ProductCategoryDropDown {
     name: React.DetailedHTMLProps<React.HTMLAttributes<HTMLParagraphElement>, HTMLParagraphElement>,
@@ -47,6 +49,13 @@ const ProductsListTemplate = () => {
     useEffect(() => {
         setActualPage(0)
     }, [sortMode])
+
+    useEffect(() => {
+        webVitalActions.sendDataToAnalytics("products");
+        webVitalActions.googleAnalyticsGetWebVitals("products");
+        webVitalActions.sendDataToGAForWebVitalsReport("products");
+        googleAnalyticsActions.initGoogleAnalytics("UA-191680881-1");
+    }, []);
 
     const getProducts = () => {
         getPaginatedProductsWithFilter(

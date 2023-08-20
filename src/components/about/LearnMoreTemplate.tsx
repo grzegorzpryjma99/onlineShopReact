@@ -1,7 +1,16 @@
-import React from "react";
+import React, {useEffect} from "react";
+import {webVitalActions} from "../../utils/google-analytics/google-analytics-get-web-vitals";
+import {googleAnalyticsActions} from "../../utils/google-analytics/google-analytics-init";
 const newsPlaceholder = process.env.PUBLIC_URL + "/newsPhoto.png";
 
 const LearnMoreTemplate = () => {
+
+    useEffect(() => {
+        googleAnalyticsActions.initGoogleAnalytics("UA-191680881-1");
+        webVitalActions.googleAnalyticsGetWebVitals("about");
+        webVitalActions.sendDataToAnalytics("about");
+        webVitalActions.sendDataToGAForWebVitalsReport("about");
+    }, []);
 
     return <div className='products-list-template-container'>
         <h2 className='title-h2'>Clean and fragrant soy wax</h2>

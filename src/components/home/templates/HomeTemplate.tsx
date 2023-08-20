@@ -8,6 +8,8 @@ import {useNavigate} from "react-router-dom";
 import {Product} from "../../products/types/types";
 import {get} from "../../../lib/api/Api";
 import {Loader} from "../../common/Loader";
+import {webVitalActions} from "../../../utils/google-analytics/google-analytics-get-web-vitals";
+import {googleAnalyticsActions} from "../../../utils/google-analytics/google-analytics-init";
 
 const HomeTemplate = () => {
     const navigate = useNavigate();
@@ -17,6 +19,13 @@ const HomeTemplate = () => {
         get(`https://online-shop-api-kappa.vercel.app/api/products`)
             .then(res => setProducts(res))
     }, [])
+
+    useEffect(() => {
+        webVitalActions.googleAnalyticsGetWebVitals("home");
+        webVitalActions.sendDataToAnalytics("home");
+        webVitalActions.sendDataToGAForWebVitalsReport("home");
+        googleAnalyticsActions.initGoogleAnalytics("UA-191680881-1");
+    }, []);
 
     return <>
         <HomeBanner/>
