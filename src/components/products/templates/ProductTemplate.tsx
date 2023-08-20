@@ -12,6 +12,7 @@ import {Loader} from "../../common/Loader";
 import {products} from "../../../lib/db/products";
 import {get} from "../../../lib/api/Api";
 import {useParams} from "react-router-dom";
+import {BackButton} from "../../common/button/BackButton";
 
 const newsPlaceholder = process.env.PUBLIC_URL +  "/newsPhoto.png";
 
@@ -50,6 +51,7 @@ const ProductTemplate = () => {
         {product ? <div className='product-wrapper'>
             {/*TODO: ładniejszy layout*/}
             <Toast ref={toast}/>
+            <BackButton />
             <div className='product-container-box'>
                 <div className='product-container-left'>
                     <Galleria value={images} numVisible={5} style={{width: '65%'}}
